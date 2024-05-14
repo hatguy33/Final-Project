@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bipmwxhctb5cj"]
+[gd_scene load_steps=14 format=3 uid="uid://bipmwxhctb5cj"]
 
 [ext_resource type="Texture2D" uid="uid://cfwke0b5br0k0" path="res://assets/brackeys_platformer_assets/sprites/world_tileset.png" id="1_bysqo"]
 [ext_resource type="PackedScene" uid="uid://dmv7ckob3i8lt" path="res://scenes/player.tscn" id="1_vxu68"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://b2jjgp0r8cmrm" path="res://scenes/coin.tscn" id="4_eip3h"]
 [ext_resource type="PackedScene" uid="uid://dbgmxx5wmli4i" path="res://scenes/killzone.tscn" id="5_gqwcp"]
 [ext_resource type="PackedScene" uid="uid://qnceufuublux" path="res://scenes/slime.tscn" id="6_lwr5o"]
+[ext_resource type="FontFile" uid="uid://cnw6yq1bm0v58" path="res://assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="7_lo5rq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5kvwl"]
 texture = ExtResource("1_bysqo")
@@ -508,3 +509,37 @@ autoplay = "move"
 
 [node name="Slime" parent="." instance=ExtResource("6_lwr5o")]
 position = Vector2(621, 97)
+
+[node name="Labels" type="Node" parent="."]
+
+[node name="Label" type="Label" parent="Labels"]
+offset_left = -107.0
+offset_top = 32.0
+offset_right = 7.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(0, 0, 0.788235, 1)
+theme_override_fonts/font = ExtResource("7_lo5rq")
+theme_override_font_sizes/font_size = 8
+text = "Space to jump."
+
+[node name="Label2" type="Label" parent="Labels"]
+offset_left = 357.0
+offset_top = 28.0
+offset_right = 471.0
+offset_bottom = 66.0
+theme_override_colors/font_color = Color(0, 0, 0.788235, 1)
+theme_override_fonts/font = ExtResource("7_lo5rq")
+theme_override_font_sizes/font_size = 8
+text = "Falling Hurts
+                          "
+
+[node name="Label3" type="Label" parent="Labels"]
+offset_left = 744.0
+offset_top = -27.0
+offset_right = 858.0
+offset_bottom = 11.0
+theme_override_colors/font_color = Color(0, 0, 0.788235, 1)
+theme_override_fonts/font = ExtResource("7_lo5rq")
+theme_override_font_sizes/font_size = 8
+text = "Almost there...
+                          "
