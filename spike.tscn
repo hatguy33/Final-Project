@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://c5ku1dgq0igpq"]
+
+[ext_resource type="Script" path="res://Spike.gd" id="1_8hlyd"]
+[ext_resource type="PackedScene" uid="uid://dbgmxx5wmli4i" path="res://scenes/killzone.tscn" id="2_euymw"]
+[ext_resource type="Texture2D" uid="uid://r01fec2xgi13" path="res://assets/brackeys_platformer_assets/sprites/spikes.png" id="3_pkgkb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_44xxh"]
+size = Vector2(16, 9)
+
+[node name="Spike" type="Area2D"]
+script = ExtResource("1_8hlyd")
+
+[node name="Killzone" parent="." instance=ExtResource("2_euymw")]
+
+[node name="Sprite2D" type="Sprite2D" parent="Killzone"]
+texture = ExtResource("3_pkgkb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(0, 3.5)
+shape = SubResource("RectangleShape2D_44xxh")
