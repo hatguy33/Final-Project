@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://bipmwxhctb5cj"]
+[gd_scene load_steps=20 format=3 uid="uid://bipmwxhctb5cj"]
 
 [ext_resource type="Texture2D" uid="uid://cfwke0b5br0k0" path="res://assets/brackeys_platformer_assets/sprites/world_tileset.png" id="1_bysqo"]
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_l0pqr"]
@@ -12,6 +12,7 @@
 [ext_resource type="FontFile" uid="uid://cnw6yq1bm0v58" path="res://assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="7_lo5rq"]
 [ext_resource type="PackedScene" uid="uid://c5ku1dgq0igpq" path="res://spike.tscn" id="10_41vj6"]
 [ext_resource type="PackedScene" uid="uid://ck5c1cgfjc4fb" path="res://checkpoint.tscn" id="12_5ik4w"]
+[ext_resource type="PackedScene" uid="uid://jsejolphyc5" path="res://scenes/portal.tscn" id="13_omjyu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5kvwl"]
 texture = ExtResource("1_bysqo")
@@ -621,3 +622,6 @@ position = Vector2(1486, -25)
 
 [node name="Checkpoint2" parent="Checkpoints" instance=ExtResource("12_5ik4w")]
 position = Vector2(-13, 40)
+
+[node name="Portal" parent="." instance=ExtResource("13_omjyu")]
+position = Vector2(78, 40)
