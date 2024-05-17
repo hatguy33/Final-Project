@@ -602,4 +602,4 @@ rotation = -3.12505
 position = Vector2(1486, -25)
 
 [node name="Checkpoint2" parent="." instance=ExtResource("12_5ik4w")]
-position = Vector2(-12, 40)
+position = Vector2(-13, 40)

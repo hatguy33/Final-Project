@@ -10,3 +10,6 @@ func _ready():
 
 func _on_body_entered(body):
 	Checkpoint.last_position = global_position
+	print("okay")
+
+
