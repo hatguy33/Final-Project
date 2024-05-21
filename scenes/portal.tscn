@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mv4lo"]
 size = Vector2(10, 10)
 
-[node name="Portal" type="Area2D" groups=["portal"]]
+[node name="Portal" type="Area2D"]
 collision_layer = 7
 collision_mask = 7
 script = ExtResource("1_wkhbp")

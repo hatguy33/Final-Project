@@ -1,17 +1,10 @@
 extends Area2D
 
+signal playerTP
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-
+@export var player_position_x : int
+@export var player_position_y : int
 
 
 func _on_body_entered(body):
-	if is_in_group("portal"):
-		position.x = 80
-		position.y = 20
-	print("ddo")
+	playerTP.emit()
