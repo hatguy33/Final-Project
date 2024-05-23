@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://b2j1j6cnktok5"]
+
+[ext_resource type="Script" path="res://scripts/Portal2.gd" id="1_qu2he"]
+[ext_resource type="Texture2D" uid="uid://2sfub0r4mvoo" path="res://icon.svg" id="2_tvlxx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_im7vf"]
+radius = 8.06226
+
+[node name="Portal2" type="Area2D"]
+script = ExtResource("1_qu2he")
+player_position_x = 2700
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_im7vf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0.999996, -3.8147e-06)
+scale = Vector2(0.117188, 0.117188)
+texture = ExtResource("2_tvlxx")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
