@@ -5,7 +5,7 @@ var portals = {}
 func _ready():
 	for portal in get_tree().get_nodes_in_group("portals"):
 		#portal.playerTP.connect(go_TP)
-		portal.playerTP.connect("go_TP", self)
+		#portal.playerTP.connect("go_TP", self)
 		portals[portal.name] = portals
 func _enter_tree():
 	if Checkpoint.last_position:
