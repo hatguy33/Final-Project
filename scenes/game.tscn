@@ -12,7 +12,7 @@
 [ext_resource type="FontFile" uid="uid://cnw6yq1bm0v58" path="res://assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="7_lo5rq"]
 [ext_resource type="PackedScene" uid="uid://c5ku1dgq0igpq" path="res://spike.tscn" id="10_41vj6"]
 [ext_resource type="PackedScene" uid="uid://ck5c1cgfjc4fb" path="res://checkpoint.tscn" id="12_5ik4w"]
-[ext_resource type="PackedScene" uid="uid://jsejolphyc5" path="res://scenes/portal.tscn" id="13_omjyu"]
+[ext_resource type="PackedScene" uid="uid://beppu6s6oamfe" path="res://scenes/portal.tscn" id="13_omjyu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5kvwl"]
 texture = ExtResource("1_bysqo")
