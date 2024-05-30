@@ -8,6 +8,8 @@ var just_wall_jumped = false
 var air_jump = false
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 @onready var animated_sprite = $AnimatedSprite2D
+func _ready() -> void:
+	WorldSignals.tp_point.connect(nothing)
 
 
 func _physics_process(delta):
@@ -61,4 +63,6 @@ func appl_direction(direction):
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-
+func nothing(x, y):
+	self.position.x = x
+	self.position.y = y
