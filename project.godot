@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Music="*res://scenes/music.tscn"
 Checkpoint="*res://scripts/checkpoint.gd"
+WorldSignals="*res://scripts/world_signals.gd"
 
 [input]
 
