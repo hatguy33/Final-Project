@@ -1,5 +1,5 @@
 extends Node
 
-signal tp_point(x,y)
+signal teleport_point(x,y)
 
 

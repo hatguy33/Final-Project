@@ -9,7 +9,7 @@ var air_jump = false
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 @onready var animated_sprite = $AnimatedSprite2D
 func _ready() -> void:
-	WorldSignals.tp_point.connect(nothing)
+	WorldSignals.teleport_point.connect(nothing)
 
 
 func _physics_process(delta):
